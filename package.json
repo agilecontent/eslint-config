@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config",
+  "name": "@thiagojedi/eslint-config",
   "version": "1.0.0",
   "description": "My personal config",
   "main": ".eslintrc.js",
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/thiagojedi/eslint-config.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Thiago 'Jedi' Cerqueira <thiagoa7@gmail.com>",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/thiagojedi/eslint-config/issues"
   },
