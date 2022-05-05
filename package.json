@@ -20,20 +20,20 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
-    "eslint-config-prettier": "^8.5.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.29.4"
   },
   "devDependencies": {
     "@agilecontent/prettier-config": "thiagojedi/prettier-config",
+    "@types/node": "^17.0.31",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
   },
   "peerDependencies": {
-    "eslint": "^8.14.0",
-    "eslint-plugin-react": "^7.29.4"
+    "eslint": "^8.14.0"
   },
   "lint-staged": {
     "*.{md,json,js,ts}": "prettier --write"
-  },
-  "prettier": "@agilecontent/prettier-config"
+  }
 }
