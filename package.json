@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "My personal config",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagojedi/eslint-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagojedi/eslint-config/issues"
+  },
+  "homepage": "https://github.com/thiagojedi/eslint-config#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "devDependencies": {
+    "@agilecontent/prettier-config": "thiagojedi/prettier-config",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4"
+  },
+  "lint-staged": {
+    "*.{md,json,js,ts}": "prettier --write"
+  },
+  "prettier": "@agilecontent/prettier-config"
+}
