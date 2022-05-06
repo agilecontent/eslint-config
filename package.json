@@ -1,5 +1,5 @@
 {
-  "name": "@thiagojedi/eslint-config",
+  "name": "@agilecontent/eslint-config-frontend",
   "version": "1.0.0",
   "description": "My personal config",
   "main": ".eslintrc.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiagojedi/eslint-config.git"
+    "url": "git+https://github.com/agilecontent/eslint-config-frontend.git"
   },
   "author": "Thiago 'Jedi' Cerqueira <thiagoa7@gmail.com>",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/thiagojedi/eslint-config/issues"
+    "url": "https://github.com/agilecontent/eslint-config-frontend/issues"
   },
-  "homepage": "https://github.com/thiagojedi/eslint-config#readme",
+  "homepage": "https://github.com/agilecontent/eslint-config-frontend#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
@@ -24,7 +24,7 @@
     "eslint-plugin-react": "^7.29.4"
   },
   "devDependencies": {
-    "@agilecontent/prettier-config": "thiagojedi/prettier-config",
+    "@agilecontent/prettier-config": "github:agilecontent/prettier-config",
     "@types/node": "^17.0.31",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
@@ -35,5 +35,6 @@
   },
   "lint-staged": {
     "*.{md,json,js,ts}": "prettier --write"
-  }
+  },
+  "prettier": "@agilecontent/prettier-config"
 }
