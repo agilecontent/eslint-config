@@ -1,7 +1,4 @@
 module.exports = {
-  env: {
-    browser: true,
-  },
   extends: [
     'plugin:react/recommended',
     // Add extends before this line
