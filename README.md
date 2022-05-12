@@ -1,4 +1,4 @@
-# @agilecontent/eslint-config-frontend
+# @agilecontent/eslint-config
 
 Base configuration for eslint, used internally by @agilecontent
 
