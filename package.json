@@ -1,7 +1,7 @@
 {
-  "name": "@agilecontent/eslint-config-frontend",
+  "name": "@agilecontent/eslint-config",
   "version": "1.0.0",
-  "description": "My personal config",
+  "description": "Base config used by Agile Content",
   "main": ".eslintrc.js",
   "scripts": {
     "prepare": "husky install",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agilecontent/eslint-config-frontend.git"
+    "url": "git+https://github.com/agilecontent/eslint-config.git"
   },
   "author": "Thiago 'Jedi' Cerqueira <thiagoa7@gmail.com>",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/agilecontent/eslint-config-frontend/issues"
+    "url": "https://github.com/agilecontent/eslint-config/issues"
   },
-  "homepage": "https://github.com/agilecontent/eslint-config-frontend#readme",
+  "homepage": "https://github.com/agilecontent/eslint-config#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
