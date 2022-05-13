@@ -42,6 +42,7 @@ the **last** extended config
 Everything in base config, plus:
 
 - Extends `plugin:react/recommended` with recommended rules
+- Extends `plugin:react-hooks/recommended` with rules for react hooks
 - `react/prefer-stateless-function`: if a react class component only has a `render()`, it should be
   a function component
 - `react/jsx-fragments`: makes explicit the use of react fragment, instead of the `<></>` syntax, as
