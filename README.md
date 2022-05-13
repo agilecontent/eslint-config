@@ -7,7 +7,7 @@ Base configuration for eslint, used internally by @agilecontent
 Add this repository as a dev dependency, alongside eslint:
 
 ```shell
-npm i -D @agilecontent/eslint-config-frontend@github:agilecontent/stylelint-config-frontend eslint
+npm i -D eslint @agilecontent/eslint-config@github:agilecontent/stylelint-config
 ```
 
 Extend this config in your project's. Example with .eslintrc.js:
@@ -16,7 +16,7 @@ Extend this config in your project's. Example with .eslintrc.js:
 module.exports = {
   extends: [
     //...other extended config
-    '@agilecontent/eslint-config-frontend',
+    '@agilecontent/eslint-config',
   ],
   rules: {
     //Add you own rules here
@@ -29,17 +29,33 @@ the **last** extended config
 
 ## Rule reasoning
 
+### @agilecontent/eslint-config
+
 - `arrow-body-style`: if the only expression in an arrow function is a `return`, the function should
   not have braces
 - `no-duplicate-imports`: prevents the imports to become a mess
+- `curly`: adds curly braces to single statement conditionals and loops to prevent prettier to make
+  them single line
+
+### @agilecontent/eslint-config/frontend
+
+Everything in base config, plus:
+
+- Extends `plugin:react/recommended` with recommended rules
 - `react/prefer-stateless-function`: if a react class component only has a `render()`, it should be
   a function component
 - `react/jsx-fragments`: makes explicit the use of react fragment, instead of the `<></>` syntax, as
   the short syntax does not support attributes (i.e. `key=`)
 - `react/self-closing-comp`: empty components should be self closing (i.e. `<div/>` instead of
   `<div></div>`)
-- `curly`: adds curly braces to single statement conditionals and loops to prevent prettier to make
-  them single line
+
+### @agilecontent/eslint-config/backend
+
+Everything in base config, plus:
+
+- `env.browser` set to false
+
+Please contribute. 😁
 
 ## Contributing
 
