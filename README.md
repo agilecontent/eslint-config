@@ -7,7 +7,7 @@ Base configuration for eslint, used internally by @agilecontent
 Add this repository as a dev dependency, alongside eslint:
 
 ```shell
-npm i -D eslint @agilecontent/eslint-config@github:agilecontent/stylelint-config
+npm i -D eslint @agilecontent/eslint-config@github:agilecontent/eslint-config
 ```
 
 Extend this config in your project's. Example with .eslintrc.js:
