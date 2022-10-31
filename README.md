@@ -7,7 +7,13 @@ Base configuration for eslint, used internally by @agilecontent
 Add this repository as a dev dependency, alongside eslint:
 
 ```shell
-npm i -D eslint @agilecontent/eslint-config@github:agilecontent/eslint-config
+npm i -D @agilecontent/eslint-config
+```
+
+or
+
+```
+yarn add -D @agilecontent/eslint-config
 ```
 
 Extend this config in your project's. Example with .eslintrc.js:
@@ -16,7 +22,7 @@ Extend this config in your project's. Example with .eslintrc.js:
 module.exports = {
   extends: [
     //...other extended config
-    '@agilecontent/eslint-config',
+    '@agilecontent/eslint-config', //or '@agilecontent/eslint-config/frontend' if you use react
   ],
   rules: {
     //Add you own rules here
